@@ -1,6 +1,6 @@
-FoodHub
-Cari resep, punya resep disini tempatnya!
+# FoodHub
 ---
+Cari resep, punya resep disini tempatnya!
 Web for look cooking recipes with laravel 10 and bootstrap 
 
 # Features
