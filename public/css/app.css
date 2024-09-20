@@ -1,0 +1,181 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.cdnfonts.com/css/livvic');
+@import url('https://fonts.cdnfonts.com/css/inter');
+
+/* Container */
+.container{
+    margin-top: 150px;
+}
+
+
+.search-container {
+    margin-left: 4px !important;
+    position: relative;
+}
+
+.search-input {
+    padding-left: 53px !important; 
+}
+
+.search-icon {
+    position: absolute;
+    top: 50%;
+    left: 23px; 
+    transform: translateY(-100%);
+    pointer-events: none; 
+    width: 20px; 
+    height: 20px;
+}
+
+.form-input {
+    border-radius: 20px !important;
+    height: 60px !important;
+    width: 65vh !important;
+}
+
+.col{
+    display: contents;
+}
+
+.title-lie{
+    font-family: 'Lobster', sans-serif;
+    display: flex;
+    justify-content: space-around;
+}
+
+.lie-lie{
+    display: flex;
+}
+
+.lie-lie h1{
+    font-size: 60px;
+}
+
+.hero .dot-lie{
+    color: #92D050;
+}
+
+.desc-lie{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/* Carousel */
+.carousel-item {
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    filter: invert(1);
+}
+
+
+.carousel-control-prev, 
+.carousel-control-next{
+    justify-content: none !important;
+}
+
+.carousel{
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+}
+
+.card {
+    border: none;
+    font-family: 'Inter', sans-serif;
+    border-radius: 20px;
+    background-color: #f8f8f8;
+    width: 60%; 
+    margin: 0 auto;
+    height: 350px; 
+}
+
+/* menu card */
+.card {
+    background-color: #E0F7FA; /* warna background sesuai mockup */
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* shadow halus */
+    width: 18rem;
+    padding: 15px;
+    position: relative;
+    overflow: hidden;
+    font-family: 'Nunito', sans-serif;
+}
+
+.card-img-top {
+    border-radius: 10px;
+    height: 150px;
+    object-fit: cover; /* untuk membuat gambar terpotong dengan baik */
+}
+
+.card h5 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 10px;
+    color: #333;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.love img {
+    width: 25px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.bottom-card {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.pfp {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.creator-info {
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+}
+
+.creator-info p {
+    margin: 0;
+}
+
+.creator-info .tgl {
+    font-size: 0.8rem;
+    color: #777;
+}
+
+.btn-primary {
+    background-color: #FFAB40;
+    border-color: #FFAB40;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+}
+
+.btn-primary:hover {
+    background-color: #FF6F00;
+    border-color: #FF6F00;
+    transform: scale(1.05);
+}
+
+
+
