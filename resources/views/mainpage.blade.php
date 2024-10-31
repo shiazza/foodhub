@@ -19,6 +19,9 @@
     </section>  
       <div class="row height d-flex justify-content-center align-items-center">
         <div class="col">
+        <div class="bg">
+      <img src="/assets/bg/bgvige_home.svg" alt="bg" class="bgvige_home">
+        </div>
           <div class="search-container">
             <input type="text" class="form-control form-input border-dark search-input search-container" placeholder="Ketik buat cari resep...">
             <img src="/assets/icon/Icon.svg" width="20" height="20" alt="Search Icon" class="search-icon">
@@ -48,6 +51,7 @@
                       <a href="#" class="category-link">Nasi</a>  
                       <a href="#" class="category-link">Kue Basah</a>  
                     </div>
+                    <div class="warp-card">
                     <div class="card" style="width: 18rem;">
                     <div class="love">
                       <img src="/assets/icon/Heart.svg" alt="">
@@ -66,14 +70,51 @@
                     </div>
                   </div>
                   </div>
+                  <div class="card" style="width: 18rem;">
+                    <div class="love">
+                      <img src="/assets/icon/Heart.svg" alt="">
+                    </div>
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <div class="bottom-card">
+                          <img src="/assets/pfp/Pepe.com.jpg" alt="pfp" class="pfp">
+                          <div class="creator-info">
+                              <p><small><strong>RYUTA</strong></small></p>
+                              <p class="tgl"><small>15 Maret 2022</small></p>
+                          </div>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <div class="love">
+                      <img src="/assets/icon/Heart.svg" alt="">
+                    </div>
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <div class="bottom-card">
+                          <img src="/assets/pfp/Pepe.com.jpg" alt="pfp" class="pfp">
+                          <div class="creator-info">
+                              <p><small><strong>RYUTA</strong></small></p>
+                              <p class="tgl"><small>15 Maret 2022</small></p>
+                          </div>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div> 
+                  </div>
+                  </div>
                 </div>
              </div>
             </div>
           </div>
-	    </button>
+	      </button>
+      </div>
     </div>
-    </div>
-        </div>
+  </div>  
 </div>
     </div>
 </main>
