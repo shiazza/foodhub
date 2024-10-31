@@ -9,15 +9,25 @@ class MenuController extends Controller
 {
     public function index()
     {
-        $menus = Menu::all();
-        return response()->json($menus);
-    }
+        $menus = Menu::orderBy('co_view', 'desc')->get();
+        return view('mainpage', compact('menus'));
+    }    
 
     public function show($id)
     {
         $menu = Menu::find($id);
         return response()->json($menu);
     }
+
+    public function likeMenu($id)
+    {
+        $menu = Menu::find($id);
+        if ($menu) {
+            $menu->increment('likes'); 
+        }
+        return redirect()->back();
+    }
+
 
     public function store(Request $request)
     {

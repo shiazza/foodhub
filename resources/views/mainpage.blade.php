@@ -52,65 +52,31 @@
                       <a href="#" class="category-link">Kue Basah</a>  
                     </div>
                     <div class="warp-card">
-                    <div class="card" style="width: 18rem;">
-                    <div class="love">
-                      <img src="/assets/icon/Heart.svg" alt="">
-                    </div>
-                    <img class="card-img-top" src="..." alt="Card image cap">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <div class="bottom-card">
-                          <img src="/assets/pfp/Pepe.com.jpg" alt="pfp" class="pfp">
-                          <div class="creator-info">
-                              <p><small><strong>RYUTA</strong></small></p>
-                              <p class="tgl"><small>15 Maret 2022</small></p>
+                      @foreach($menus as $menu)
+                      <div class="card" style="width: 18rem;">
+                          <div class="love">
+                              <form action="{{ route('likeMenu', $menu->id) }}" method="POST">
+                                  @csrf
+                                  <button type="submit" class="btn-like">
+                                      <img src="/assets/icon/Heart.svg" alt="Like" />
+                                  </button>
+                              </form>
                           </div>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                  </div>
-                  </div>
-                  <div class="card" style="width: 18rem;">
-                    <div class="love">
-                      <img src="/assets/icon/Heart.svg" alt="">
-                    </div>
-                    <img class="card-img-top" src="..." alt="Card image cap">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <div class="bottom-card">
-                          <img src="/assets/pfp/Pepe.com.jpg" alt="pfp" class="pfp">
-                          <div class="creator-info">
-                              <p><small><strong>RYUTA</strong></small></p>
-                              <p class="tgl"><small>15 Maret 2022</small></p>
+                          <img class="card-img-top" src="{{ $menu->thumb }}" alt="{{ $menu->title }}">
+                          <div class="card-body">
+                              <h5 class="card-title">{{ $menu->title }}</h5>
+                              <p class="card-text">{{ Str::limit($menu->descrip, 100) }}</p>
+                              <div class="bottom-card">
+                                  <img src="/assets/pfp/Pepe.com.jpg" alt="pfp" class="pfp">
+                                  <div class="creator-info">
+                                      <p><small><strong>{{ $menu->creator->username }}</strong></small></p>
+                                      <p class="tgl"><small>{{ $menu->created_at->format('d M Y') }}</small></p>
+                                  </div>
+                                  <a href="{{ route('menu.show', $menu->id) }}" class="btn btn-primary">View Recipe</a>
+                              </div>
                           </div>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                  </div>
-                  </div>
-                  <div class="card" style="width: 18rem;">
-                    <div class="love">
-                      <img src="/assets/icon/Heart.svg" alt="">
-                    </div>
-                    <img class="card-img-top" src="..." alt="Card image cap">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <div class="bottom-card">
-                          <img src="/assets/pfp/Pepe.com.jpg" alt="pfp" class="pfp">
-                          <div class="creator-info">
-                              <p><small><strong>RYUTA</strong></small></p>
-                              <p class="tgl"><small>15 Maret 2022</small></p>
-                          </div>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                  </div> 
-                  </div>
-                  </div>
-                </div>
-             </div>
-            </div>
-          </div>
+                      </div>
+                @endforeach                       
 	      </button>
       </div>
     </div>
@@ -120,5 +86,5 @@
 </main>
 </div>
 </body>
-<script src="/public/js/csel.js"></script>
+<script src="{{ asset('js/app.js') }}"></script>
 </html>

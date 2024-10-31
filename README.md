@@ -1,6 +1,6 @@
-# FoodHub 🍲
+![Laravel](https://laravel.com/img/logomark.min.svg) 10
 
-![Laravel](https://laravel.com/img/logomark.min.svg)
+# FoodHub 🍲
 
 **Cari resep, punya resep? Disini tempatnya!**
 
